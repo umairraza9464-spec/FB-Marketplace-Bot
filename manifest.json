@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "FB Marketplace Lead Bot",
+  "version": "1.0",
+  "description": "AI-powered lead generation from Facebook Marketplace",
+  "permissions": ["tabs","storage","notifications","scripting"],
+  "host_permissions": ["https://www.facebook.com/*"],
+  "background": {"service_worker": "background.js"},
+  "content_scripts": [{"matches": ["https://www.facebook.com/marketplace*"],"js": ["content.js"],"run_at": "document_end"}],
+  "action": {"default_popup": "popup.html","default_title": "FB Bot"}
+}
