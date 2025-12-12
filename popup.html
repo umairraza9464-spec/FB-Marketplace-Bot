@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body{width:400px;padding:15px;font-family:Arial;background:#667eea;color:#fff}
+.container{background:white;border-radius:10px;padding:20px;color:#333}
+h1{color:#667eea;border-bottom:2px solid #667eea;padding-bottom:10px}
+input{width:100%;padding:8px;margin:8px 0;border:1px solid #ddd;border-radius:5px;box-sizing:border-box}
+button{width:100%;padding:10px;background:#667eea;color:white;border:none;border-radius:5px;cursor:pointer;margin:5px 0;font-weight:bold}
+button:hover{background:#5568d3}
+.status{padding:10px;text-align:center;margin-top:10px;font-weight:bold;border-radius:5px}
+.active{background:#d4edda;color:#155724}
+.inactive{background:#f8d7da;color:#721c24}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>⚡ FB Marketplace Bot</h1>
+<input type="text" id="cities" value="Mumbai,Delhi,Hyderabad,Pune,Lucknow,Kolkata" placeholder="Cities">
+<input type="text" id="msg" value="dealer or owner if owner than send no" placeholder="Message">
+<input type="number" id="leads" value="50" min="5" max="500">
+<button id="startBtn">▶️ START BOT</button>
+<button id="stopBtn">⏹️ STOP BOT</button>
+<div class="status inactive" id="status">Status: Inactive</div>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
